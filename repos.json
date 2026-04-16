@@ -1,5 +1,16 @@
 [
   {
+    "name": "my-repos-catalog",
+    "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
+    "is_fork": false,
+    "language": "\u2014",
+    "pushed_at": "2026-04-16",
+    "visibility": "public",
+    "stars": 0,
+    "topics": [],
+    "html_url": "https://github.com/geto98653134684/my-repos-catalog"
+  },
+  {
     "name": "openclaude",
     "description": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs.",
     "is_fork": true,
@@ -342,9 +353,7 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/arpl",
-    "parent": "fbelavenuto/arpl",
-    "parent_url": "https://github.com/fbelavenuto/arpl"
+    "html_url": "https://github.com/geto98653134684/arpl"
   },
   {
     "name": "tinycore-redpill",
@@ -355,8 +364,6 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/tinycore-redpill",
-    "parent": "pocopico/tinycore-redpill",
-    "parent_url": "https://github.com/pocopico/tinycore-redpill"
+    "html_url": "https://github.com/geto98653134684/tinycore-redpill"
   }
 ]
