@@ -1,0 +1,193 @@
+name: Regenerate Repo Catalog
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:          # manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate catalog
+        run: |
+          python3 << 'PYEOF'
+          import urllib.request, json
+          from datetime import date
+
+          username = "geto98653134684"
+          today = date.today().isoformat()
+
+          # Fetch all repos
+          url = f"https://api.github.com/users/{username}/repos?per_page=100&sort=pushed&type=all"
+          req = urllib.request.Request(url, headers={"User-Agent": "catalog-bot/1.0", "Accept": "application/vnd.github+json"})
+          with urllib.request.urlopen(req) as r:
+              repos = json.loads(r.read())
+
+          slim = []
+          for r in repos:
+              slim.append({
+                  "name": r["name"],
+                  "description": r.get("description") or "—",
+                  "is_fork": r["fork"],
+                  "language": r.get("language") or "—",
+                  "pushed_at": r["pushed_at"][:10],
+                  "visibility": r["visibility"],
+                  "stars": r["stargazers_count"],
+                  "topics": r.get("topics", []),
+                  "html_url": r["html_url"],
+              })
+
+          # Fetch parent info for forks
+          for repo in slim:
+              if repo["is_fork"]:
+                  try:
+                      req2 = urllib.request.Request(
+                          f"https://api.github.com/repos/{username}/{repo['name']}",
+                          headers={"User-Agent": "catalog-bot/1.0", "Accept": "application/vnd.github+json"})
+                      with urllib.request.urlopen(req2) as r2:
+                          d = json.loads(r2.read())
+                          if d.get("parent"):
+                              repo["parent"] = d["parent"]["full_name"]
+                              repo["parent_url"] = d["parent"]["html_url"]
+                  except:
+                      pass
+
+          with open("repos.json", "w") as f:
+              json.dump(slim, f, indent=2)
+
+          # Categorize — Option B semantic logic
+          def categorize(r):
+              n = r["name"].lower()
+              d = r["description"].lower()
+              c = n + " " + d
+              if any(k in c for k in ["claude", "skill", "agent", "llm", "gpt", "openai", "codex",
+                                       "ai-engineer", "deeptutor", "autoresearch", "paperclip", "clawx",
+                                       "agency", "openclaude", "get-shit-done", "marketing", "ui-ux",
+                                       "obsidian-skill", "everything-claude"]):
+                  return "Claude & AI Dev Tools"
+              if any(k in c for k in ["trader", "trading", "finance", "financial", "invest", "zerodha"]):
+                  return "Investment & Finance"
+              if any(k in c for k in ["n8n", "workflow", "automation"]) and "mcp" not in n:
+                  return "Automation & Workflows"
+              if any(k in c for k in ["fooocus", "comfyui", "kokoro", "audiobook", "mirofish", "tts"]):
+                  return "AI Media & Creative"
+              if any(k in c for k in ["docker", "perplexic", "arc", "redpill", "tinycore", "arpl",
+                                       "docling", "ollama", "nas"]):
+                  return "Self-hosting & Infrastructure"
+              if not r["is_fork"]:
+                  return "Original Work"
+              return "Experiments & Learning"
+
+          cats = {}
+          for repo in slim:
+              cat = categorize(repo)
+              cats.setdefault(cat, []).append(repo)
+
+          order = [
+              ("Claude & AI Dev Tools",        "🤖", "claude-ai-dev-tools"),
+              ("Investment & Finance",          "💹", "investment--finance"),
+              ("Automation & Workflows",        "⚙️",  "automation--workflows"),
+              ("AI Media & Creative",           "🎨", "ai-media--creative"),
+              ("Self-hosting & Infrastructure", "🏗️",  "self-hosting--infrastructure"),
+              ("Original Work",                 "★",  "original-work"),
+              ("Experiments & Learning",        "🧪", "experiments--learning"),
+          ]
+
+          counts = {cat: len(cats.get(cat, [])) for cat, _, _ in order}
+          total = len(slim)
+
+          def safe(name):
+              return name.replace("-", "_").replace(" ", "_")[:25]
+
+          mm_lines = ["mindmap", "  root((GS Repos))"]
+          for cat, icon, _ in order:
+              items = cats.get(cat, [])
+              if not items: continue
+              mm_lines.append(f"    {icon} {cat}")
+              for r in items:
+                  mm_lines.append(f"      {safe(r['name'])}")
+          mermaid = "\n".join(mm_lines)
+
+          def badge(label, message, color):
+              l = label.replace(" ", "_").replace("-", "--")
+              m = str(message).replace(" ", "_").replace("-", "--")
+              return f"![{label}](https://img.shields.io/badge/{l}-{m}-{color}?style=flat-square)"
+
+          badges = " ".join([
+              badge("Total Repos", total, "blue"),
+              badge("Last Updated", today, "green"),
+              badge("Claude %26 AI", counts.get("Claude & AI Dev Tools", 0), "blueviolet"),
+              badge("Finance", counts.get("Investment & Finance", 0), "yellow"),
+              badge("Media", counts.get("AI Media & Creative", 0), "ff69b4"),
+              badge("Infrastructure", counts.get("Self-hosting & Infrastructure", 0), "orange"),
+          ])
+
+          nav = " · ".join([f"[{icon} {cat}](#{anchor})" for cat, icon, anchor in order if cats.get(cat)])
+
+          def make_table(items):
+              lines = ["| Repo | Description | Language | Last Updated | Link |",
+                       "|------|-------------|----------|--------------|------|"]
+              for r in items:
+                  fork = " 🍴" if r["is_fork"] else " ★"
+                  desc = r["description"][:80] if r["description"] != "—" else "—"
+                  lines.append(f"| `{r['name']}{fork}` | {desc} | {r['language']} | {r['pushed_at']} | [↗]({r['html_url']}) |")
+              return "\n".join(lines)
+
+          sections = []
+          for cat, icon, anchor in order:
+              items = cats.get(cat, [])
+              if not items: continue
+              sections.append(f"""
+          <details>
+          <summary><h3>{icon} {cat} &nbsp;<sup>{len(items)} repos</sup></h3></summary>
+
+          {make_table(items)}
+
+          </details>""")
+
+          readme = f"""# 🗂️ GS — GitHub Repos Catalog
+
+          > Self-taught tech enthusiast · AI tools · Self-hosting · Docker · Open-source
+
+          {badges}
+
+          ---
+
+          {nav}
+
+          ---
+
+          ## 🧭 Landscape
+
+          ```mermaid
+          {mermaid}
+          ```
+
+          ---
+
+          {"".join(sections)}
+
+          ---
+
+          <sub>Generated on {today} using GitHub Actions + Claude Code · <a href="https://github.com/{username}">@{username}</a></sub>
+          """
+
+          with open("README.md", "w") as f:
+              f.write(readme)
+
+          print(f"Done: {total} repos across {sum(1 for c,_,_ in order if cats.get(c))} categories")
+          PYEOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "actions@github.com"
+          git add README.md repos.json
+          git diff --cached --quiet || git commit -m "docs: regenerate catalog $(date +%Y-%m-%d)"
+          git push
