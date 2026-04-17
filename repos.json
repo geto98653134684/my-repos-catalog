@@ -4,7 +4,7 @@
     "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
     "is_fork": false,
     "language": "\u2014",
-    "pushed_at": "2026-04-16",
+    "pushed_at": "2026-04-17",
     "visibility": "public",
     "stars": 0,
     "topics": [],
@@ -353,7 +353,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/arpl"
+    "html_url": "https://github.com/geto98653134684/arpl",
+    "parent": "fbelavenuto/arpl",
+    "parent_url": "https://github.com/fbelavenuto/arpl"
   },
   {
     "name": "tinycore-redpill",
@@ -364,6 +366,8 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/tinycore-redpill"
+    "html_url": "https://github.com/geto98653134684/tinycore-redpill",
+    "parent": "pocopico/tinycore-redpill",
+    "parent_url": "https://github.com/pocopico/tinycore-redpill"
   }
 ]

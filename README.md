@@ -2,7 +2,7 @@
 
 > Self-taught tech enthusiast · AI tools · Self-hosting · Docker · Open-source
 
-![Total Repos](https://img.shields.io/badge/Total_Repos-29-blue?style=flat-square) ![Last Updated](https://img.shields.io/badge/Last_Updated-2026--04--16-green?style=flat-square) ![Claude %26 AI](https://img.shields.io/badge/Claude_%26_AI-14-blueviolet?style=flat-square) ![Finance](https://img.shields.io/badge/Finance-2-yellow?style=flat-square) ![Media](https://img.shields.io/badge/Media-5-ff69b4?style=flat-square) ![Infrastructure](https://img.shields.io/badge/Infrastructure-6-orange?style=flat-square)
+![Total Repos](https://img.shields.io/badge/Total_Repos-29-blue?style=flat-square) ![Last Updated](https://img.shields.io/badge/Last_Updated-2026--04--17-green?style=flat-square) ![Claude %26 AI](https://img.shields.io/badge/Claude_%26_AI-14-blueviolet?style=flat-square) ![Finance](https://img.shields.io/badge/Finance-2-yellow?style=flat-square) ![Media](https://img.shields.io/badge/Media-5-ff69b4?style=flat-square) ![Infrastructure](https://img.shields.io/badge/Infrastructure-6-orange?style=flat-square)
 
 ---
 
@@ -110,7 +110,7 @@ mindmap
 
 | Repo | Description | Language | Last Updated | Link |
 |------|-------------|----------|--------------|------|
-| `my-repos-catalog ★` | Auto-generated catalog of all my GitHub repos — categorized, badged, and searcha | — | 2026-04-16 | [↗](https://github.com/geto98653134684/my-repos-catalog) |
+| `my-repos-catalog ★` | Auto-generated catalog of all my GitHub repos — categorized, badged, and searcha | — | 2026-04-17 | [↗](https://github.com/geto98653134684/my-repos-catalog) |
 | `Perplexica 🍴` | Perplexica is an AI-powered search engine. It is an Open source alternative to P | — | 2025-01-11 | [↗](https://github.com/geto98653134684/Perplexica) |
 | `arc 🍴` | Arc is a customized Redpill Loader for DSM 7.x (Xpenology) with enhanced Hardwar | — | 2025-01-08 | [↗](https://github.com/geto98653134684/arc) |
 | `doclingwithollama 🍴` | Docling with Ollama - RAG on Local Files with Local Models | — | 2025-01-01 | [↗](https://github.com/geto98653134684/doclingwithollama) |
@@ -129,4 +129,4 @@ mindmap
 
 ---
 
-<sub>Generated on 2026-04-16 using GitHub API + Claude Code · <a href="https://github.com/geto98653134684">@geto98653134684</a></sub>
+<sub>Generated on 2026-04-17 using GitHub Actions + Claude Code · <a href="https://github.com/geto98653134684">@geto98653134684</a></sub>
