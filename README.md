@@ -110,7 +110,7 @@ mindmap
 
 | Repo | Description | Language | Last Updated | Link |
 |------|-------------|----------|--------------|------|
-| `my-repos-catalog ★` | Auto-generated catalog of all my GitHub repos — categorized, badged, and searcha | — | 2026-04-25 | [↗](https://github.com/geto98653134684/my-repos-catalog) |
+| `my-repos-catalog ★` | Auto-generated catalog of all my GitHub repos — categorized, badged, and searcha | — | 2026-04-26 | [↗](https://github.com/geto98653134684/my-repos-catalog) |
 | `Perplexica 🍴` | Perplexica is an AI-powered search engine. It is an Open source alternative to P | — | 2025-01-11 | [↗](https://github.com/geto98653134684/Perplexica) |
 | `arc 🍴` | Arc is a customized Redpill Loader for DSM 7.x (Xpenology) with enhanced Hardwar | — | 2025-01-08 | [↗](https://github.com/geto98653134684/arc) |
 | `doclingwithollama 🍴` | Docling with Ollama - RAG on Local Files with Local Models | — | 2025-01-01 | [↗](https://github.com/geto98653134684/doclingwithollama) |
