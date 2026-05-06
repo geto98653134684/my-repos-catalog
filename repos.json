@@ -4,7 +4,7 @@
     "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
     "is_fork": false,
     "language": "\u2014",
-    "pushed_at": "2026-05-05",
+    "pushed_at": "2026-05-06",
     "visibility": "public",
     "stars": 0,
     "topics": [],
@@ -262,7 +262,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/ComfyUI-Docker"
+    "html_url": "https://github.com/geto98653134684/ComfyUI-Docker",
+    "parent": "YanWenKun/ComfyUI-Docker",
+    "parent_url": "https://github.com/YanWenKun/ComfyUI-Docker"
   },
   {
     "name": "Kokoro-FastAPI",
@@ -273,7 +275,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/Kokoro-FastAPI"
+    "html_url": "https://github.com/geto98653134684/Kokoro-FastAPI",
+    "parent": "remsky/Kokoro-FastAPI",
+    "parent_url": "https://github.com/remsky/Kokoro-FastAPI"
   },
   {
     "name": "Fooocus",
@@ -284,7 +288,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/Fooocus"
+    "html_url": "https://github.com/geto98653134684/Fooocus",
+    "parent": "lllyasviel/Fooocus",
+    "parent_url": "https://github.com/lllyasviel/Fooocus"
   },
   {
     "name": "ebook2audiobook",
@@ -295,7 +301,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/ebook2audiobook"
+    "html_url": "https://github.com/geto98653134684/ebook2audiobook",
+    "parent": "DrewThomasson/ebook2audiobook",
+    "parent_url": "https://github.com/DrewThomasson/ebook2audiobook"
   },
   {
     "name": "Perplexica",
@@ -306,7 +314,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/Perplexica"
+    "html_url": "https://github.com/geto98653134684/Perplexica",
+    "parent": "ItzCrazyKns/Vane",
+    "parent_url": "https://github.com/ItzCrazyKns/Vane"
   },
   {
     "name": "arc",
@@ -317,7 +327,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/arc"
+    "html_url": "https://github.com/geto98653134684/arc",
+    "parent": "AuxXxilium/arc",
+    "parent_url": "https://github.com/AuxXxilium/arc"
   },
   {
     "name": "doclingwithollama",
@@ -328,7 +340,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/doclingwithollama"
+    "html_url": "https://github.com/geto98653134684/doclingwithollama",
+    "parent": "fahdmirza/doclingwithollama",
+    "parent_url": "https://github.com/fahdmirza/doclingwithollama"
   },
   {
     "name": "arpl",
@@ -339,7 +353,9 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/arpl"
+    "html_url": "https://github.com/geto98653134684/arpl",
+    "parent": "fbelavenuto/arpl",
+    "parent_url": "https://github.com/fbelavenuto/arpl"
   },
   {
     "name": "tinycore-redpill",
@@ -350,6 +366,8 @@
     "visibility": "public",
     "stars": 0,
     "topics": [],
-    "html_url": "https://github.com/geto98653134684/tinycore-redpill"
+    "html_url": "https://github.com/geto98653134684/tinycore-redpill",
+    "parent": "pocopico/tinycore-redpill",
+    "parent_url": "https://github.com/pocopico/tinycore-redpill"
   }
 ]
