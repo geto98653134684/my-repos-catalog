@@ -2,11 +2,11 @@
 
 > Self-taught tech enthusiast · AI tools · Self-hosting · Docker · Open-source
 
-![Total Repos](https://img.shields.io/badge/Total_Repos-29-blue?style=flat-square) ![Last Updated](https://img.shields.io/badge/Last_Updated-2026--06--06-green?style=flat-square) ![Claude %26 AI](https://img.shields.io/badge/Claude_%26_AI-14-blueviolet?style=flat-square) ![Finance](https://img.shields.io/badge/Finance-2-yellow?style=flat-square) ![Media](https://img.shields.io/badge/Media-5-ff69b4?style=flat-square) ![Infrastructure](https://img.shields.io/badge/Infrastructure-6-orange?style=flat-square)
+![Total Repos](https://img.shields.io/badge/Total_Repos-30-blue?style=flat-square) ![Last Updated](https://img.shields.io/badge/Last_Updated-2026--06--06-green?style=flat-square) ![Claude %26 AI](https://img.shields.io/badge/Claude_%26_AI-14-blueviolet?style=flat-square) ![Finance](https://img.shields.io/badge/Finance-2-yellow?style=flat-square) ![Media](https://img.shields.io/badge/Media-5-ff69b4?style=flat-square) ![Infrastructure](https://img.shields.io/badge/Infrastructure-6-orange?style=flat-square)
 
 ---
 
-[🤖 Claude & AI Dev Tools](#claude-ai-dev-tools) · [💹 Investment & Finance](#investment--finance) · [⚙️ Automation & Workflows](#automation--workflows) · [🎨 AI Media & Creative](#ai-media--creative) · [🏗️ Self-hosting & Infrastructure](#self-hosting--infrastructure) · [★ Original Work](#original-work)
+[🤖 Claude & AI Dev Tools](#claude-ai-dev-tools) · [💹 Investment & Finance](#investment--finance) · [⚙️ Automation & Workflows](#automation--workflows) · [🎨 AI Media & Creative](#ai-media--creative) · [🏗️ Self-hosting & Infrastructure](#self-hosting--infrastructure) · [★ Original Work](#original-work) · [🧪 Experiments & Learning](#experiments--learning)
 
 ---
 
@@ -50,6 +50,8 @@ mindmap
       tinycore_redpill
     ★ Original Work
       geto98653134684
+    🧪 Experiments & Learning
+      odysseus
 ```
 
 ---
@@ -110,7 +112,7 @@ mindmap
 
 | Repo | Description | Language | Last Updated | Link |
 |------|-------------|----------|--------------|------|
-| `my-repos-catalog ★` | Auto-generated catalog of all my GitHub repos — categorized, badged, and searcha | — | 2026-06-05 | [↗](https://github.com/geto98653134684/my-repos-catalog) |
+| `my-repos-catalog ★` | Auto-generated catalog of all my GitHub repos — categorized, badged, and searcha | — | 2026-06-06 | [↗](https://github.com/geto98653134684/my-repos-catalog) |
 | `Perplexica 🍴` | Perplexica is an AI-powered search engine. It is an Open source alternative to P | — | 2025-01-11 | [↗](https://github.com/geto98653134684/Perplexica) |
 | `arc 🍴` | Arc is a customized Redpill Loader for DSM 7.x (Xpenology) with enhanced Hardwar | — | 2025-01-08 | [↗](https://github.com/geto98653134684/arc) |
 | `doclingwithollama 🍴` | Docling with Ollama - RAG on Local Files with Local Models | — | 2025-01-01 | [↗](https://github.com/geto98653134684/doclingwithollama) |
@@ -124,6 +126,14 @@ mindmap
 | Repo | Description | Language | Last Updated | Link |
 |------|-------------|----------|--------------|------|
 | `geto98653134684 ★` | GitHub Profile README | — | 2026-03-01 | [↗](https://github.com/geto98653134684/geto98653134684) |
+
+</details>
+<details>
+<summary><h3>🧪 Experiments & Learning &nbsp;<sup>1 repos</sup></h3></summary>
+
+| Repo | Description | Language | Last Updated | Link |
+|------|-------------|----------|--------------|------|
+| `odysseus 🍴` | Self-hosted AI workspace.  | — | 2026-06-06 | [↗](https://github.com/geto98653134684/odysseus) |
 
 </details>
 
