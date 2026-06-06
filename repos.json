@@ -1,5 +1,16 @@
 [
   {
+    "name": "my-repos-catalog",
+    "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
+    "is_fork": false,
+    "language": "\u2014",
+    "pushed_at": "2026-06-06",
+    "visibility": "public",
+    "stars": 0,
+    "topics": [],
+    "html_url": "https://github.com/geto98653134684/my-repos-catalog"
+  },
+  {
     "name": "odysseus",
     "description": "Self-hosted AI workspace. ",
     "is_fork": true,
@@ -11,17 +22,6 @@
     "html_url": "https://github.com/geto98653134684/odysseus",
     "parent": "pewdiepie-archdaemon/odysseus",
     "parent_url": "https://github.com/pewdiepie-archdaemon/odysseus"
-  },
-  {
-    "name": "my-repos-catalog",
-    "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
-    "is_fork": false,
-    "language": "\u2014",
-    "pushed_at": "2026-06-06",
-    "visibility": "public",
-    "stars": 0,
-    "topics": [],
-    "html_url": "https://github.com/geto98653134684/my-repos-catalog"
   },
   {
     "name": "openclaude",
