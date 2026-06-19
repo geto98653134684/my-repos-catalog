@@ -24,6 +24,19 @@
     "parent_url": "https://github.com/pewdiepie-archdaemon/odysseus"
   },
   {
+    "name": "OpenCut",
+    "description": "The open-source CapCut alternative",
+    "is_fork": true,
+    "language": "\u2014",
+    "pushed_at": "2026-05-27",
+    "visibility": "public",
+    "stars": 0,
+    "topics": [],
+    "html_url": "https://github.com/geto98653134684/OpenCut",
+    "parent": "OpenCut-app/OpenCut",
+    "parent_url": "https://github.com/OpenCut-app/OpenCut"
+  },
+  {
     "name": "openclaude",
     "description": "Open Claude Is Open-source coding-agent CLI for OpenAI, Gemini, DeepSeek, Ollama, Codex, GitHub Models, and 200+ models via OpenAI-compatible APIs.",
     "is_fork": true,

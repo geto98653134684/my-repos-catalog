@@ -2,7 +2,7 @@
 
 > Self-taught tech enthusiast · AI tools · Self-hosting · Docker · Open-source
 
-![Total Repos](https://img.shields.io/badge/Total_Repos-30-blue?style=flat-square) ![Last Updated](https://img.shields.io/badge/Last_Updated-2026--06--19-green?style=flat-square) ![Claude %26 AI](https://img.shields.io/badge/Claude_%26_AI-14-blueviolet?style=flat-square) ![Finance](https://img.shields.io/badge/Finance-2-yellow?style=flat-square) ![Media](https://img.shields.io/badge/Media-5-ff69b4?style=flat-square) ![Infrastructure](https://img.shields.io/badge/Infrastructure-6-orange?style=flat-square)
+![Total Repos](https://img.shields.io/badge/Total_Repos-31-blue?style=flat-square) ![Last Updated](https://img.shields.io/badge/Last_Updated-2026--06--19-green?style=flat-square) ![Claude %26 AI](https://img.shields.io/badge/Claude_%26_AI-14-blueviolet?style=flat-square) ![Finance](https://img.shields.io/badge/Finance-2-yellow?style=flat-square) ![Media](https://img.shields.io/badge/Media-5-ff69b4?style=flat-square) ![Infrastructure](https://img.shields.io/badge/Infrastructure-6-orange?style=flat-square)
 
 ---
 
@@ -52,6 +52,7 @@ mindmap
       geto98653134684
     🧪 Experiments & Learning
       odysseus
+      OpenCut
 ```
 
 ---
@@ -129,11 +130,12 @@ mindmap
 
 </details>
 <details>
-<summary><h3>🧪 Experiments & Learning &nbsp;<sup>1 repos</sup></h3></summary>
+<summary><h3>🧪 Experiments & Learning &nbsp;<sup>2 repos</sup></h3></summary>
 
 | Repo | Description | Language | Last Updated | Link |
 |------|-------------|----------|--------------|------|
 | `odysseus 🍴` | Self-hosted AI workspace.  | — | 2026-06-06 | [↗](https://github.com/geto98653134684/odysseus) |
+| `OpenCut 🍴` | The open-source CapCut alternative | — | 2026-05-27 | [↗](https://github.com/geto98653134684/OpenCut) |
 
 </details>
 
