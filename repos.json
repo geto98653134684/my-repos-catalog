@@ -11,6 +11,19 @@
     "html_url": "https://github.com/geto98653134684/my-repos-catalog"
   },
   {
+    "name": "Understand-Anything",
+    "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "is_fork": true,
+    "language": "\u2014",
+    "pushed_at": "2026-06-20",
+    "visibility": "public",
+    "stars": 0,
+    "topics": [],
+    "html_url": "https://github.com/geto98653134684/Understand-Anything",
+    "parent": "Egonex-AI/Understand-Anything",
+    "parent_url": "https://github.com/Egonex-AI/Understand-Anything"
+  },
+  {
     "name": "odysseus",
     "description": "Self-hosted AI workspace. ",
     "is_fork": true,
