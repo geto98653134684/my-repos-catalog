@@ -1,5 +1,16 @@
 [
   {
+    "name": "my-repos-catalog",
+    "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
+    "is_fork": false,
+    "language": "\u2014",
+    "pushed_at": "2026-06-24",
+    "visibility": "public",
+    "stars": 0,
+    "topics": [],
+    "html_url": "https://github.com/geto98653134684/my-repos-catalog"
+  },
+  {
     "name": "Unlimited-OCR",
     "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
     "is_fork": true,
@@ -11,17 +22,6 @@
     "html_url": "https://github.com/geto98653134684/Unlimited-OCR",
     "parent": "baidu/Unlimited-OCR",
     "parent_url": "https://github.com/baidu/Unlimited-OCR"
-  },
-  {
-    "name": "my-repos-catalog",
-    "description": "Auto-generated catalog of all my GitHub repos \u2014 categorized, badged, and searchable",
-    "is_fork": false,
-    "language": "\u2014",
-    "pushed_at": "2026-06-24",
-    "visibility": "public",
-    "stars": 0,
-    "topics": [],
-    "html_url": "https://github.com/geto98653134684/my-repos-catalog"
   },
   {
     "name": "Understand-Anything",
